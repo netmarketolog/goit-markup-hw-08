@@ -1,0 +1,37 @@
+/* Company */
+
+.company {
+    display: flex;
+    justify-content: center;
+}
+
+.company__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.company__link {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: contain;
+    transition-property: fill, border, box-sizing, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:active,
+    &:focus,
+    &:hover {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}

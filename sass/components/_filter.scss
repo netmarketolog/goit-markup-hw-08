@@ -1,0 +1,18 @@
+/* Portfolio */
+
+
+/* Filter */
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    &__iteam:not(:last-child) {
+        margin-right: 8px;
+    }
+    & .current {
+        background-color: var(--accent-color);
+        color: var(--white-color);
+        cursor: pointer
+    }
+}
