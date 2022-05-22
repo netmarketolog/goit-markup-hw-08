@@ -3,10 +3,12 @@
 .company {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
 }
 
-.company__item:not(:last-child) {
-    margin-right: 30px;
+.company__item {
+    margin: 15px;
 }
 
 .company__link {

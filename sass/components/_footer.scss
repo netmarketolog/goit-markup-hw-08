@@ -14,9 +14,10 @@
 
 /* Cont-footer */
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
+.footer__container--mod {
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
 }
 
 
@@ -35,6 +36,7 @@
 
 .address {
     margin-top: 20px;
+    margin-bottom: 60px;
     &__link--grey {
         color: rgba(255, 255, 255, 0.6);
     }
@@ -48,7 +50,7 @@
         letter-spacing: 0.03em;
     }
     &__item:not(:last-child) {
-        margin-bottom: 9px;
+        margin: 8px;
     }
 }
 
@@ -56,7 +58,8 @@
 /* Join */
 
 .join {
-    margin-left: 70px;
+    // margin-left: 70px;
+    margin-bottom: 60px;
     &__title {
         margin-bottom: 20px;
         font-weight: 700;
@@ -104,7 +107,7 @@
 /* Subscribe */
 
 .subscribe {
-    margin-left: 93px;
+    // margin-left: 93px;
     &__title {
         margin-bottom: 20px;
         font-weight: 700;
@@ -115,14 +118,16 @@
         color: #FFFFFF;
     }
     &__form {
-        display: flex;
+        // display: flex;
     }
     &__label {
         margin-right: 12px;
     }
     &__email {
+        // margin: 0 15px;
         padding: 15px 16px;
-        width: 358px;
+        // width: 358px;
+        width: 100%;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
@@ -146,6 +151,8 @@
     align-items: center;
     width: 200px;
     height: 50px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .sub:hover .subscribe__svg {
