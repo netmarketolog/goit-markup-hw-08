@@ -27,6 +27,13 @@
         <div class="container page-header__container">
             <nav class="page-header__navigation">
                 <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
+                <button class="menu-toggel js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggel__icon">
+                        <use href="./img/symbol-defs1.svg#mob-m">
+                        </use>
+                    </svg>
+                </button>
+
                 <ul class="site-nav ">
                     <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -52,23 +59,30 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu">
-            <ul class="site-nav ">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggel js-close-menu">
+                <svg class="menu-toggel__icon">
+                    <use href="./img/symbol-defs1.svg#esc-m">
+                    </use>
+                </svg>
+            </button>
+
+            <ul class="mob-site-nav ">
+                <li class="mob-site-nav__item"><a href="./index.html" class="mob-site-nav__link current">Студия</a></li>
+                <li class="mob-site-nav__item"><a href="./portfolio.html" class="mob-site-nav__link">Портфолио</a></li>
+                <li class="mob-site-nav__item"><a href="#" class="mob-site-nav__link">Контакты</a></li>
             </ul>
-            <ul class="auth-nav">
-                <li class="auth-nav__item">
-                    <a href="mailto:info@devstudio.com" class="auth-nav__link">
+            <ul class="mob-auth-nav">
+                <li class="mob-auth-nav__item">
+                    <a href="mailto:info@devstudio.com" class="mob-auth-nav__link">
                         <svg class="auth-nav__icon">
                             <use href="./img/symbol-defs1.svg#envelope">
                             </use>
                         </svg> info@devstudio.com
                     </a>
                 </li>
-                <li class="auth-nav__item">
-                    <a href="tel:+380961111111" class="auth-nav__link">
+                <li class="mob-auth-nav__item">
+                    <a href="tel:+380961111111" class="mob-auth-nav__link">
                         <svg class="auth-nav__icon">
                             <use href="./img/symbol-defs1.svg#smartphone">
                             </use>
@@ -76,7 +90,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="social-nav">
+            <ul class="mob-social-nav">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -445,6 +459,9 @@
 
     </div>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js "></script>
 
 </body>
