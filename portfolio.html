@@ -27,9 +27,16 @@
         <div class="container page-header__container">
             <nav class="page-header__navigation">
                 <a href="./index.html" class="logo"><span class="logo--blue">Web</span>Studio</a>
+                <button class="menu-toggel js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-toggel__icon">
+                        <use href="./img/symbol-defs1.svg#mob-m">
+                        </use>
+                    </svg>
+                </button>
+
                 <ul class="site-nav ">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
@@ -51,11 +58,42 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggel js-close-menu">
+                <svg class="menu-toggel__icon">
+                    <use href="./img/symbol-defs1.svg#esc-m">
+                    </use>
+                </svg>
+            </button>
 
+            <ul class="mob-site-nav ">
+                <li class="mob-site-nav__item"><a href="./index.html" class="mob-site-nav__link">Студия</a></li>
+                <li class="mob-site-nav__item"><a href="./portfolio.html" class="mob-site-nav__link current">Портфолио</a></li>
+                <li class="mob-site-nav__item"><a href="#" class="mob-site-nav__link">Контакты</a></li>
+            </ul>
+            <ul class="mob-auth-nav">
+                <li class="mob-auth-nav__item">
+                    <a href="tel:+380961111111" class="mob-auth-nav__link">
+                        <span class="mob-auth-nav__nomber">+38 096 111 11 11</span>
+                    </a>
+                </li>
+
+                <li class="mob-auth-nav__item">
+                    <a href="mailto:info@devstudio.com" class="mob-auth-nav__link">
+                        <span class="mob-auth-nav__email">info@devstudio.com</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mob-social-nav">
+                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Instagram</a></li>
+                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Twitter</a></li>
+                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Facebook</a></li>
+                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">LinkedIn</a></li>
+            </ul>
         </div>
 
     </header>
-
     <!-- Main -->
     <main>
         <section class="section">
@@ -72,7 +110,13 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x.jpg  354w,
+                        ./img/desc/portfolio/img370@1x.jpg 370w,
+                        ./img/mobile/portfolio/img450@1x.jpg 450w,
+                        ./img/tablet/portfolio/img708@2x.jpg  708w,
+                        ./img/desc/portfolio/img740@2x.jpg 740w,
+                        ./img/mobile/portfolio/img900@2x.jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -87,7 +131,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p1.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(1).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(1).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(1).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(1).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(1).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(1).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -102,7 +153,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p2.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(2).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(2).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(2).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(2).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(2).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(2).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -117,7 +175,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p3.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(3).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(3).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(3).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(3).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(3).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(3).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -133,7 +198,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p4.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(4).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(4).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(4).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(4).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(4).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(4).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -148,7 +220,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p5.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(5).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(5).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(5).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(5).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(5).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(5).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -163,7 +242,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p6.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(6).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(6).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(6).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(6).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(6).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(6).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -177,7 +263,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p7.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(7).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(7).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(7).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(7).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(7).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(7).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -191,7 +284,14 @@
                     <li class="gallery__iteam">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img src="./img/portfolio/img-p8.jpg" alt="Технокряк" width="370px">
+                                <img srcset="
+                        ./img/tablet/portfolio/img354@1x(8).jpg  354w,
+                        ./img/desc/portfolio/img370@1x(8).jpg 370w,
+                        ./img/mobile/portfolio/img450@1x(8).jpg 450w,
+                        ./img/tablet/portfolio/img708@2x(8).jpg  708w,
+                        ./img/desc/portfolio/img740@2x(8).jpg 740w,
+                        ./img/mobile/portfolio/img900@2x(8).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -210,99 +310,96 @@
     </main>
 
     <!-- Footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__container">
-                <div class="footer__address">
-                    <a href="./index.html" class="logo footer__address--logo-white"><span class="logo--blue">Web</span>Studio</a>
-                    <address class="address">
-                        <ul class="address__desc">
-                            <li class="address__item"><a href="https://goo.gl/maps/hwr6JyE6x6DrGfeN8" class="address__link--white">г. Киев, пр-т Леси Украинки, 26</a></li>
-                            <li class="address__item"><a href="mailto:info@devstudio.com" class="address__link--grey">info@devstudio.com</a></li>
-                            <li class="address__item"><a href="tel:+380961111111" class="address__link--grey">+38 096 111 11 11</a></li>
+    <footer class="footer ">
+        <div class="container footer__container--mod ">
+            <div class="footer__address ">
+                <a href="./index.html " class="logo footer__address--logo-white "><span class="logo--blue ">Web</span>Studio</a>
+                <address class="address ">
+                        <ul class="address__desc ">
+                            <li class="address__item "><a href="https://goo.gl/maps/hwr6JyE6x6DrGfeN8 " class="address__link--white ">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li class="address__item "><a href="mailto:info@devstudio.com " class="address__link--grey ">info@devstudio.com</a></li>
+                            <li class="address__item "><a href="tel:+380961111111 " class="address__link--grey ">+38 096 111 11 11</a></li>
                         </ul>
                     </address>
-                </div>
-                <div class="join">
-                    <h2 class="join__title">присоединяйтесь</h2>
-                    <ul class="join__social">
-                        <li class="join__icon">
-                            <a href="" class="join__link">
-                                <svg class="join__svg"><use href="./img/symbol-defs1.svg#instagram1" ></use></svg>
-                            </a>
-                        </li>
-                        <li class="join__icon">
-                            <a href="" class="join__link">
-                                <svg class="join__svg"><use href="./img/symbol-defs1.svg#twitter1" ></use></svg>
-                            </a>
-                        </li>
-                        <li class="join__icon">
-                            <a href="" class="join__link">
-                                <svg class="join__svg"><use href="./img/symbol-defs1.svg#facebook1" ></use></svg>
-                            </a>
-                        </li>
-                        <li class="join__icon">
-                            <a href="" class="join__link">
-                                <svg class="join__svg"><use href="./img/symbol-defs1.svg#linkedin1" ></use></svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subscribe">
-                    <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
-                    <form class="subscribe__form">
-                        <label class="subscribe__label">
-                            <input type="email" name="email" class="subscribe__email" placeholder="E-mail">
+            </div>
+            <div class="join ">
+                <h2 class="join__title ">присоединяйтесь</h2>
+                <ul class="join__social ">
+                    <li class="join__icon ">
+                        <a href=" " class="join__link ">
+                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#instagram1 " ></use></svg>
+                        </a>
+                    </li>
+                    <li class="join__icon ">
+                        <a href=" " class="join__link ">
+                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#twitter1 " ></use></svg>
+                        </a>
+                    </li>
+                    <li class="join__icon ">
+                        <a href=" " class="join__link ">
+                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#facebook1 " ></use></svg>
+                        </a>
+                    </li>
+                    <li class="join__icon ">
+                        <a href=" " class="join__link ">
+                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#linkedin1 " ></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe ">
+                <h2 class="subscribe__title ">Подпишитесь на рассылку</h2>
+                <form class="subscribe__form ">
+                    <label class="subscribe__label ">
+                            <input type="email " name="email " class="subscribe__email " placeholder="E-mail ">
                         </label>
-                        <button type="submit" class="button primary sub">
+                    <button type="submit " class="button primary sub ">
                             Подписаться
-                            <svg class="subscribe__svg"><use href="./img/symbol-defs1.svg#icon-send"></use></svg>
+                            <svg class="subscribe__svg "><use href="./img/symbol-defs1.svg#icon-send "></use></svg>
                         </button>
 
-                    </form>
-                </div>
+                </form>
             </div>
-
         </div>
 
     </footer>
-    <div data-modal class="backdrop is-hidden">
-        <div class="modal">
-            <form class="modal__form">
-                <h2 class="modal__titel">Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="name" class="modal__label"> Имя </label>
-                <div class="modal__icon">
-                    <input type="name" name="name" id="name" class="modal__input">
-                    <svg class="modal__svg"><use href="./img/symbol-defs1.svg#person-black" ></use></svg>
+    <div data-modal class="backdrop is-hidden ">
+        <div class="modal ">
+            <form class="modal__form ">
+                <h2 class="modal__titel ">Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="name " class="modal__label "> Имя </label>
+                <div class="modal__icon ">
+                    <input type="name " name="name " id="name " class="modal__input ">
+                    <svg class="modal__svg "><use href="./img/symbol-defs1.svg#person-black " ></use></svg>
                 </div>
-                <label for="phone_number" class="modal__label"> Телефон </label>
-                <div class="modal__icon">
-                    <input type="tel" name="phone_number" id="phone_number" class="modal__input">
-                    <svg class="modal__svg"><use href="./img/symbol-defs1.svg#phone-black" ></use></svg>
+                <label for="phone_number " class="modal__label "> Телефон </label>
+                <div class="modal__icon ">
+                    <input type="tel " name="phone_number " id="phone_number " class="modal__input ">
+                    <svg class="modal__svg "><use href="./img/symbol-defs1.svg#phone-black " ></use></svg>
                 </div>
-                <label for="email" class="modal__label"> Почта </label>
-                <div class="modal__icon">
-                    <input type="email" name="email" id="email" class="modal__input">
-                    <svg class="modal__svg"><use href="./img/symbol-defs1.svg#email-black" ></use></svg>
+                <label for="email " class="modal__label "> Почта </label>
+                <div class="modal__icon ">
+                    <input type="email " name="email " id="email " class="modal__input ">
+                    <svg class="modal__svg "><use href="./img/symbol-defs1.svg#email-black " ></use></svg>
                 </div>
-                <label for="comment" class="modal__label"> Комментарий </label>
-                <textarea name="comment" cols="30" rows="10" placeholder="Введите текст" id="comment" class="modal__textarea">
+                <label for="comment " class="modal__label "> Комментарий </label>
+                <textarea name="comment " cols="30 " rows="10 " placeholder="Введите текст " id="comment " class="modal__textarea ">
                 </textarea>
                 <label class="modal-police"> 
                         <input type="checkbox" name="police" class="modal-police__checkbox">
-                        <span class="modal-police__icon">
-                            <svg class="modal-police__svg"><use href="./img/symbol-defs1.svg#icon-check" ></use></svg>  
+                        <span class="modal-police__icon ">
+                            <svg class="modal-police__svg"><use href="./img/symbol-defs1.svg#icon-check " ></use></svg>  
                         </span>
-                        <p> Соглашаюсь с рассылкой и принимаю <a href="" class="modal-police__link"> Условия договора</a></p>
+                        <p> Соглашаюсь с рассылкой и принимаю <a href=" " class="modal-police__link "> Условия договора</a></p>
                     </label>
-                <button type="submit" class="button primary mod">Отправить</button>
+                <button type="submit " class="button primary mod ">Отправить</button>
             </form>
 
 
 
-            <button data-modal-close class="esc">
-                <svg class="ecs__svg">
-                    <use href="./img/symbol-defs1.svg#esc" ></use>
+            <button data-modal-close class="esc ">
+                <svg class="ecs__svg ">
+                    <use href="./img/symbol-defs1.svg#esc " ></use>
                 </svg>
 
             </button>
@@ -310,8 +407,10 @@
 
     </div>
 
-    <script src="./js/modal.js"></script>
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js "></script>
 
 </body>
 

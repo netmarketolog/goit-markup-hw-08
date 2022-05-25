@@ -34,7 +34,12 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: none;
+}
+
+@media (max-width: 767px) {
+    .site-nav {
+        display: none;
+    }
 }
 
 .site-nav__item {
@@ -86,7 +91,12 @@
     letter-spacing: 0.02em;
     margin-left: auto;
     align-items: center;
-    display: none;
+}
+
+@media (max-width: 767px) {
+    .auth-nav {
+        display: none;
+    }
 }
 
 // .auth-nav__item:first-child {
