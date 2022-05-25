@@ -14,7 +14,7 @@
         margin: -15px;
     }
     .team__item {
-        max-width: 354px;
+        width: calc((100% - 60px) / 2);
     }
 }
 

@@ -59,6 +59,7 @@
                 </li>
             </ul>
         </div>
+        <!-- Mob-menu-->
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggel js-close-menu">
                 <svg class="menu-toggel__icon">
@@ -210,7 +211,7 @@
                         ./img/mobile/team/img450@1x(1).jpg 450w,
                         ./img/desc/team/img540@2x(1).jpg  540w,
                         ./img/tablet/team/img708@2x(1).jpg 708w,
-                        ./img/mobile/team/img900@2x(1).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Ольга Репина " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                        ./img/mobile/team/img900@2x(1).jpg 900w" src=" ./img/desc/team/img270@1x(1).jpg" alt="Ольга Репина " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
                         <div class="team__desc ">
                             <h3 class="team__title ">Ольга Репина</h3>
                             <p class="team__text ">Frontend Developer</p>
@@ -246,7 +247,7 @@
                         ./img/mobile/team/img450@1x(2).jpg 450w,
                         ./img/desc/team/img540@2x(2).jpg  540w,
                         ./img/tablet/team/img708@2x(2).jpg 708w,
-                        ./img/mobile/team/img900@2x(2).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Николай Тарасов " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                        ./img/mobile/team/img900@2x(2).jpg 900w" src=" ./img/desc/team/img270@1x(2).jpg" alt="Николай Тарасов " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
                         <div class="team__desc ">
                             <h3 class="team__title ">Николай Тарасов</h3>
                             <p class="team__text ">Marketing</p>
@@ -282,7 +283,7 @@
                         ./img/mobile/team/img450@1x(3).jpg 450w,
                         ./img/desc/team/img540@2x(3).jpg  540w,
                         ./img/tablet/team/img708@2x(3).jpg 708w,
-                        ./img/mobile/team/img900@2x(3).jpg 900w" src=" ./img/desc/team/img270@1x.jpg " alt="Михаил Ермаков " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                        ./img/mobile/team/img900@2x(3).jpg 900w" src=" ./img/desc/team/img270@1x(3).jpg" alt="Михаил Ермаков " sizes=" (min-width: 1200) 270px, (min-width: 768) 354px, (min-width: 480) 450px ">
                         <div class="team__desc ">
                             <h3 class="team__title ">Михаил Ермаков</h3>
                             <p class="team__text ">UI Designer</p>
@@ -358,55 +359,65 @@
 
     <!-- Footer-->
     <footer class="footer ">
-        <div class="container footer__container--mod ">
-            <div class="footer__address ">
-                <a href="./index.html " class="logo footer__address--logo-white "><span class="logo--blue ">Web</span>Studio</a>
-                <address class="address ">
-                        <ul class="address__desc ">
-                            <li class="address__item "><a href="https://goo.gl/maps/hwr6JyE6x6DrGfeN8 " class="address__link--white ">г. Киев, пр-т Леси Украинки, 26</a></li>
-                            <li class="address__item "><a href="mailto:info@devstudio.com " class="address__link--grey ">info@devstudio.com</a></li>
-                            <li class="address__item "><a href="tel:+380961111111 " class="address__link--grey ">+38 096 111 11 11</a></li>
+        <div class="container  ">
+            <ul class="footer__container--mod">
+                <li class="footer__item">
+                    <div class="footer__address ">
+                        <a href="./index.html " class="logo footer__address--logo-white "><span class="logo--blue ">Web</span>Studio</a>
+                        <address class="address ">
+                                <ul class="address__desc ">
+                                    <li class="address__item "><a href="https://goo.gl/maps/hwr6JyE6x6DrGfeN8 " class="address__link--white ">г. Киев, пр-т Леси Украинки, 26</a></li>
+                                    <li class="address__item "><a href="mailto:info@devstudio.com " class="address__link--grey ">info@devstudio.com</a></li>
+                                    <li class="address__item "><a href="tel:+380961111111 " class="address__link--grey ">+38 096 111 11 11</a></li>
+                                </ul>
+                            </address>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="join ">
+                        <h2 class="join__title ">присоединяйтесь</h2>
+                        <ul class="join__social ">
+                            <li class="join__icon ">
+                                <a href=" " class="join__link ">
+                                    <svg class="join__svg "><use href="./img/symbol-defs1.svg#instagram1 " ></use></svg>
+                                </a>
+                            </li>
+                            <li class="join__icon ">
+                                <a href=" " class="join__link ">
+                                    <svg class="join__svg "><use href="./img/symbol-defs1.svg#twitter1 " ></use></svg>
+                                </a>
+                            </li>
+                            <li class="join__icon ">
+                                <a href=" " class="join__link ">
+                                    <svg class="join__svg "><use href="./img/symbol-defs1.svg#facebook1 " ></use></svg>
+                                </a>
+                            </li>
+                            <li class="join__icon ">
+                                <a href=" " class="join__link ">
+                                    <svg class="join__svg "><use href="./img/symbol-defs1.svg#linkedin1 " ></use></svg>
+                                </a>
+                            </li>
                         </ul>
-                    </address>
-            </div>
-            <div class="join ">
-                <h2 class="join__title ">присоединяйтесь</h2>
-                <ul class="join__social ">
-                    <li class="join__icon ">
-                        <a href=" " class="join__link ">
-                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#instagram1 " ></use></svg>
-                        </a>
-                    </li>
-                    <li class="join__icon ">
-                        <a href=" " class="join__link ">
-                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#twitter1 " ></use></svg>
-                        </a>
-                    </li>
-                    <li class="join__icon ">
-                        <a href=" " class="join__link ">
-                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#facebook1 " ></use></svg>
-                        </a>
-                    </li>
-                    <li class="join__icon ">
-                        <a href=" " class="join__link ">
-                            <svg class="join__svg "><use href="./img/symbol-defs1.svg#linkedin1 " ></use></svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe ">
-                <h2 class="subscribe__title ">Подпишитесь на рассылку</h2>
-                <form class="subscribe__form ">
-                    <label class="subscribe__label ">
-                            <input type="email " name="email " class="subscribe__email " placeholder="E-mail ">
-                        </label>
-                    <button type="submit " class="button primary sub ">
-                            Подписаться
-                            <svg class="subscribe__svg "><use href="./img/symbol-defs1.svg#icon-send "></use></svg>
-                        </button>
+                    </div>
 
-                </form>
-            </div>
+                </li>
+                <li class="footer__item">
+                    <div class="subscribe ">
+                        <h2 class="subscribe__title ">Подпишитесь на рассылку</h2>
+                        <form class="subscribe__form ">
+                            <label class="subscribe__label ">
+                                    <input type="email " name="email " class="subscribe__email " placeholder="E-mail ">
+                                </label>
+                            <button type="submit " class="button primary sub ">
+                                    Подписаться
+                                    <svg class="subscribe__svg "><use href="./img/symbol-defs1.svg#icon-send "></use></svg>
+                                </button>
+
+                        </form>
+                    </div>
+
+                </li>
+            </ul>
         </div>
 
     </footer>
