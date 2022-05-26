@@ -1,30 +1,33 @@
         /* Gallery */
         
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -15px;
+        .gallery__item:not(:last-child) {
+            margin-bottom: 30px;
         }
         
-        @media (max-width: 767px) {
-            .gallery__iteam {
+        @media (min-width:768px) {
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                margin: -15px;
+            }
+            .gallery__item {
                 width: 100vw;
                 margin: 15px;
             }
-            // .gallery__iteam:not(:last-child) {
+            // .gallery__item:not(:last-child) {
             //     margin-bottom: 30px;
             // }
         }
         
         @media (min-width: 768px) {
-            .gallery__iteam {
+            .gallery__item {
                 width: calc((100% - 60px) / 2);
                 margin: 15px;
             }
         }
         
         @media (min-width: 1200px) {
-            .gallery__iteam {
+            .gallery__item {
                 width: calc((100% - 90px) / 3);
                 margin: 15px;
             }
@@ -103,7 +106,7 @@
             width: 100%;
             height: 100%;
             /* Если поставить падинг и бек, то верхние два селектора не нужны */
-            padding: 63px 24px;
+            padding: 77px 24px;
             font-weight: 400;
             font-size: 18px;
             line-height: 1.56;
@@ -121,14 +124,14 @@
             }
         }
         
-        @media (max-width: 767px) {
-            .gallery__text {
-                padding: 77px 24px;
-            }
-        }
-        
         @media (min-width: 768px) {
             .gallery__text {
                 padding: 49px 24px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .gallery__text {
+                padding: 63px 24px;
             }
         }

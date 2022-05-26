@@ -72,25 +72,27 @@
                 <li class="mob-site-nav__item"><a href="./portfolio.html" class="mob-site-nav__link current">Портфолио</a></li>
                 <li class="mob-site-nav__item"><a href="#" class="mob-site-nav__link">Контакты</a></li>
             </ul>
-            <ul class="mob-auth-nav">
-                <li class="mob-auth-nav__item">
-                    <a href="tel:+380961111111" class="mob-auth-nav__link">
-                        <span class="mob-auth-nav__nomber">+38 096 111 11 11</span>
-                    </a>
-                </li>
+            <div class="menu-container__contacts">
+                <ul class="mob-auth-nav">
+                    <li class="mob-auth-nav__item">
+                        <a href="tel:+380961111111" class="mob-auth-nav__link">
+                            <span class="mob-auth-nav__nomber">+38 096 111 11 11</span>
+                        </a>
+                    </li>
 
-                <li class="mob-auth-nav__item">
-                    <a href="mailto:info@devstudio.com" class="mob-auth-nav__link">
-                        <span class="mob-auth-nav__email">info@devstudio.com</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="mob-social-nav">
-                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Instagram</a></li>
-                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Twitter</a></li>
-                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Facebook</a></li>
-                <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">LinkedIn</a></li>
-            </ul>
+                    <li class="mob-auth-nav__item">
+                        <a href="mailto:info@devstudio.com" class="mob-auth-nav__link">
+                            <span class="mob-auth-nav__email">info@devstudio.com</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mob-social-nav">
+                    <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Instagram</a></li>
+                    <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Twitter</a></li>
+                    <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">Facebook</a></li>
+                    <li class="mob-social-nav__item"><a href="" class="mob-social-nav__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -100,23 +102,28 @@
             <div class="container">
                 <h1 class="visually-hidden">Потртфолио</h1>
                 <ul class="filter">
-                    <li class="filter__iteam"><button type="button" class="button current secondary">Все</button></li>
-                    <li class="filter__iteam"><button type="button" class="button secondary">Веб-сайт</button></li>
-                    <li class="filter__iteam"><button type="button" class="button secondary">Приложения</button></li>
-                    <li class="filter__iteam"><button type="button" class="button secondary">Дизайн</button></li>
-                    <li class="filter__iteam"><button type="button" class="button secondary">Маркетинг</button></li>
+                    <li class="filter__item"><button type="button" class="button current secondary">Все</button></li>
+                    <li class="filter__item"><button type="button" class="button secondary">Веб-сайт</button></li>
+                    <li class="filter__item"><button type="button" class="button secondary">Приложения</button></li>
+                    <li class="filter__item"><button type="button" class="button secondary">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="button secondary">Маркетинг</button></li>
                 </ul>
                 <ul class="gallery">
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x.jpg  354w,
-                        ./img/desc/portfolio/img370@1x.jpg 370w,
-                        ./img/mobile/portfolio/img450@1x.jpg 450w,
-                        ./img/tablet/portfolio/img708@2x.jpg  708w,
-                        ./img/desc/portfolio/img740@2x.jpg 740w,
-                        ./img/mobile/portfolio/img900@2x.jpg 900w" src=" ./img/tablet/portfolio/img354@1x.jpg  " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x.jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x.jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x.jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x.jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x.jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -128,16 +135,21 @@
                         </a>
 
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(1).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(1).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(1).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(1).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(1).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(1).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(1).jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(1).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(1).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(1).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(1).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(1).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(1).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(1).jpg" alt="Страница веб-сайта">
+                                </picture>
 
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -150,17 +162,21 @@
                         </a>
 
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(2).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(2).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(2).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(2).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(2).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(2).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(2).jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(2).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(2).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(2).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(2).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(2).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(2).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(2).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -172,17 +188,21 @@
                         </a>
 
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(3).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(3).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(3).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(3).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(3).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(3).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(3).jpg " alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(3).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(3).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(3).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(3).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(3).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(3).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(3).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -195,17 +215,21 @@
                     </li>
 
 
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(4).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(4).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(4).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(4).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(4).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(4).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(4).jpg" alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(4).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(4).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(4).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(4).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(4).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(4).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(4).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -217,17 +241,21 @@
                         </a>
 
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(5).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(5).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(5).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(5).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(5).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(5).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(5).jpg" alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(5).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(5).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(5).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(5).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(5).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(5).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(5).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -239,17 +267,21 @@
                         </a>
 
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(6).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(6).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(6).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(6).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(6).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(6).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(6).jpg" alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(6).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(6).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(6).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(6).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(6).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(6).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(6).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -260,17 +292,21 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(7).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(7).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(7).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(7).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(7).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(7).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(7).jpg" alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
-
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(7).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(7).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(7).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(7).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(7).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(7).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(7).jpg" alt="Страница веб-сайта">
+                                </picture>
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                                 </p>
@@ -281,16 +317,21 @@
                             </div>
                         </a>
                     </li>
-                    <li class="gallery__iteam">
+                    <li class="gallery__item">
                         <a href="" class="gallery__link">
                             <div class="gallery__img">
-                                <img srcset="
-                        ./img/tablet/portfolio/img354@1x(8).jpg  354w,
-                        ./img/desc/portfolio/img370@1x(8).jpg 370w,
-                        ./img/mobile/portfolio/img450@1x(8).jpg 450w,
-                        ./img/tablet/portfolio/img708@2x(8).jpg  708w,
-                        ./img/desc/portfolio/img740@2x(8).jpg 740w,
-                        ./img/mobile/portfolio/img900@2x(8).jpg 900w" src=" ./img/tablet/portfolio/img354@1x(8).jpg" alt="Технокряк" sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px ">
+                                <picture>
+                                    <source srcset="
+                                                        ./img/mobile/portfolio/img450@1x(8).jpg 450w,
+                                                        ./img/mobile/portfolio/img900@2x(8).jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                    <source srcset="
+                                                        ./img/tablet/portfolio/img354@1x(8).jpg 354w,
+                                                        ./img/tablet/portfolio/img708@2x(8).jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+                                    <source srcset="
+                                                        ./img/desc/portfolio/img370@1x(8).jpg 370w,
+                                                        ./img/desc/portfolio/img740@2x(8).jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+                                    <img src="./img/desc/portfolio/img370@1x(8).jpg" alt="Страница веб-сайта">
+                                </picture>
 
                                 <p class="gallery__text">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.

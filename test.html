@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <picture>
+        <source srcset="
+                                ./img/mobile/portfolio/img450@1x.jpg 450w,
+                                ./img/mobile/portfolio/img900@2x.jpg  900w" media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+        <source srcset="
+                                ./img/tablet/portfolio/img354@1x.jpg 354w,
+                                ./img/tablet/portfolio/img708@2x.jpg 708w" media="(max-width: 1199px)" sizes="(min-width: 768px) 354px, 50vw">
+        <source srcset="
+                                ./img/desc/portfolio/img370@1x.jpg 370w,
+                                ./img/desc/portfolio/img740@2x.jpg 740w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 370px, 33vw">
+        <img src="./img/desc/portfolio/img370@1x.jpg" alt="Страница веб-сайта">
+    </picture>
+</body>
+
+</html>
