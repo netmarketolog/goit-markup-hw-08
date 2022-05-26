@@ -209,6 +209,17 @@ a {
   padding: 0;
   background: #FFFFFF;
   border: none;
+  fill: #212121;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggel:hover, .menu-toggel:focus {
+  fill: var(--batton-primary-color);
 }
 
 .menu-toggel__icon {
