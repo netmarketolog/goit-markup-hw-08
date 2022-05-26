@@ -38,7 +38,7 @@ screen and (min-resolution: 2dppx) {
     .hero {
         padding: 200px 0;
         max-width: 1600px;
-        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desc/img-hero.jpg)
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desc/img-hero@1x.jpg)
     }
     @media (min-resolution: 2dppx) {
         .hero {
