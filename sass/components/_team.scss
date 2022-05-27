@@ -16,6 +16,9 @@
         flex-wrap: wrap;
         margin: -15px;
     }
+    .team__item:not(:last-child) {
+        margin-bottom: 15px;
+    }
     .team__item {
         width: calc((100% - 60px) / 2);
         margin: 15px;

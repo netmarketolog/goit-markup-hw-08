@@ -1,6 +1,8 @@
 /* Logo */
 
 .logo {
+    display: block;
+    padding: 16px 0;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -14,6 +16,10 @@
     &:focus {
         color: var(--accent-color);
     }
+    // .footer .logo:hover,
+    // .footer .logo:focus {
+    //     color: var(--accent-color);
+    // }
 }
 
 @media (min-width: 1200px) {
@@ -24,4 +30,15 @@
 
 .logo--blue {
     color: var(--accent-color);
+}
+
+.footer__address--logo-white {
+    color: var(--white-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address--logo-no-padding {
+    padding: 0;
 }

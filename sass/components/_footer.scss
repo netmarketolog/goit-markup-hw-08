@@ -6,10 +6,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    & .logo:hover,
-    & .logo:focus {
-        color: var(--accent-color);
-    }
 }
 
 @media (min-width:1200px) {
@@ -49,13 +45,6 @@
         margin-bottom: 60px;
         max-width: 232px;
     }
-}
-
-.footer__address--logo-white {
-    color: var(--white-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {

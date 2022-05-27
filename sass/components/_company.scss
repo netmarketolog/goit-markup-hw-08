@@ -2,19 +2,32 @@
 
 .company {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     flex-wrap: wrap;
     margin: -15px;
 }
 
 .company__item {
     margin: 15px;
+    width: calc((100% - 60px) / 2)
+}
+
+@media (min-width:768px) {
+    .company__item {
+        width: calc((100% - 90px) / 3)
+    }
+}
+
+@media (min-width:1200px) {
+    .company__item {
+        width: 170px
+    }
 }
 
 .company__link {
     margin: 0;
     padding: 0;
-    width: 170px;
+    width: 100%;
     height: 92px;
     display: flex;
     justify-content: center;
