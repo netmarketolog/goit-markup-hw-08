@@ -2,7 +2,6 @@
 
 .logo {
     display: block;
-    padding: 16px 0;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -26,6 +25,10 @@
     .logo {
         font-size: 26px;
     }
+}
+
+.logo--padding {
+    padding: 16px 0;
 }
 
 .logo--blue {
