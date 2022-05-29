@@ -111,9 +111,12 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .auth-nav {
         display: list-item;
+    }
+    .auth-nav__item:first-child {
+        margin-bottom: 10px;
     }
 }
 

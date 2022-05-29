@@ -108,6 +108,7 @@
 // mob-social-nav
 .mob-social-nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mob-social-nav__item:not(:first-child) {

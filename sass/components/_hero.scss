@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 1200px) {
-    .hero {
+    и .hero {
         padding: 200px 0;
         max-width: 1600px;
         background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desc/header-img@1x.jpg)
@@ -63,9 +63,16 @@
     margin-right: auto;
 }
 
+@media (min-width: 768px) {
+    .hero__title {
+        width: 360px;
+    }
+}
+
 @media (min-width: 1200px) {
     .hero__title {
         font-size: 44px;
         line-height: 1.36;
+        width: 696px;
     }
 }
