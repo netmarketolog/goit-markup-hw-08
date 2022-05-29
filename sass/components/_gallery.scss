@@ -78,27 +78,27 @@
         .gallery__img {
             overflow: hidden;
             position: relative;
-            &::before {
-                display: inline-block;
-                position: absolute;
-                top: 0%;
-                left: 0%;
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: rgba(33, 150, 243, 0.9);
-                opacity: 0;
-                overflow: hidden;
-                transform: translateY(100%);
-                transition-property: transform, opacity;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            .gallery__link:hover &::before,
-            .gallery__link:focus &::before {
-                opacity: 1;
-                transform: translateY(0%);
-            }
+            // &::before {
+            //     display: inline-block;
+            //     position: absolute;
+            //     top: 0%;
+            //     left: 0%;
+            //     content: "";
+            //     width: 100%;
+            //     height: 100%;
+            //     background: rgba(33, 150, 243, 0.9);
+            //     opacity: 0;
+            //     overflow: hidden;
+            //     transform: translateY(100%);
+            //     transition-property: transform, opacity;
+            //     transition-duration: 250ms;
+            //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            // }
+            // .gallery__link:hover &::before,
+            // .gallery__link:focus &::before {
+            //     opacity: 1;
+            //     transform: translateY(0%);
+            // }
         }
         
         .gallery__text {
@@ -114,7 +114,7 @@
             line-height: 1.56;
             letter-spacing: 0.03em;
             color: #ffffff;
-            /* background: rgba(33, 150, 243, 0.9); */
+            background: rgba(33, 150, 243, 0.9);
             overflow: hidden;
             transform: translateY(100%);
             transition-property: transform;
@@ -123,6 +123,14 @@
             .gallery__link:hover &,
             .gallery__link:focus & {
                 transform: translateY(0%);
+            }
+            @media screen and (max-width:320px) {
+                font-size: 12px;
+                padding: 33px 10px;
+            }
+            @media screen and (min-width:321px) and (max-width:370px) {
+                font-size: 16px;
+                padding: 33px 10px;
             }
         }
         
