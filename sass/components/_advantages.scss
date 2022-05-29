@@ -1,7 +1,9 @@
 /* Advantages */
 
-.advantages__item:not(:last-child) {
-    margin-bottom: 30px;
+@media (max-width: 767px) {
+    .advantages__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -13,9 +15,6 @@
     .advantages__item {
         width: calc((100% - 60px) / 2);
         margin: 15px;
-    }
-    .advantages__item:not(:nth-child(2n)) {
-        margin-right: 15px;
     }
 }
 

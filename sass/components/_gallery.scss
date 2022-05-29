@@ -1,7 +1,9 @@
         /* Gallery */
         
-        .gallery__item:not(:last-child) {
-            margin-bottom: 30px;
+        @media (max-width:767px) {
+            .gallery__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
         
         @media (min-width:768px) {
