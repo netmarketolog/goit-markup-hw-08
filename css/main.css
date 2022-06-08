@@ -1583,13 +1583,6 @@ a {
     margin: -15px;
   }
   .gallery__item {
-    width: 100vw;
-    margin: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .gallery__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
